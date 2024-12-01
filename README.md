@@ -2,11 +2,18 @@
 
 Este proyecto crea y entrena un modelo de clasificación de imágenes utilizando la base de datos **FashionMNIST** y las arquitecturas **ResNet** y **EfficientNet**. El objetivo principal es entrenar un modelo eficiente, almacenar los pesos óptimos y generar un archivo `submission.csv` para la participación en el Hackathon "Identify the Apparels" organizado por Analytics Vidhya.
 
+## Rendimiento de los Modelos Entrenados
+
+| Modelo           | Dataset         | Precisión | Parámetros totales |
+|------------------|-----------------|-----------|--------------------|
+| **ResNet**       | FashionMNIST    | 95.17%    | 272k              |
+| **EfficientNet** | FashionMNIST    | 94.18%    | 333k              |
+
 ---
 
 ## Funcionamiento
 
-### Evaluación de un modelo entrenado
+### Evaluación de un modelo pre-entrenado
 
 Para evaluar un modelo previamente entrenado, ejecuta uno de los siguientes comandos según la arquitectura deseada:
 
@@ -20,12 +27,6 @@ python main.py -test -arch EfficientNet --ckpt_file ./checkpoint/efficientnet_ck
 
 Estos comandos generan predicciones para el conjunto de prueba y guardan el archivo `submission.csv` en la carpeta `submission/`.
 
-### Rendimiento de los Modelos Pre-entrenados
-
-| Modelo          | Dataset          | Precisión |  Params. |
-|-----------------|------------------|----------|-------------------| 
-| **ResNet**      | FashionMNIST     | 95.17%   |  272k  | 
-| **EfficientNet**| FashionMNIST     | 94.18%   |  333k  |
 
 ### Entrenamiento de un modelo desde cero
 
