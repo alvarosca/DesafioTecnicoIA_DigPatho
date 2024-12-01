@@ -20,6 +20,13 @@ python main.py -test -arch EfficientNet --ckpt_file ./checkpoint/efficientnet_ck
 
 Estos comandos generan predicciones para el conjunto de prueba y guardan el archivo `submission.csv` en la carpeta `submission/`.
 
+### Rendimiento de los Modelos Pre-entrenados
+
+| Modelo          | Dataset          | Precisión |  Num. de parámetros |
+|-----------------|------------------|----------|-------------------| 
+| **ResNet**      | FashionMNIST     | 95.17%   |        272k       | 
+| **EfficientNet**| FashionMNIST     | 94.18%   |        333k       |
+
 ### Entrenamiento de un modelo desde cero
 
 Para iniciar el entrenamiento desde cero, especifica la arquitectura y el número de 'epochs':
