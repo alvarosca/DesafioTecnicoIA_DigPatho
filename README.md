@@ -22,10 +22,10 @@ Estos comandos generan predicciones para el conjunto de prueba y guardan el arch
 
 ### Rendimiento de los Modelos Pre-entrenados
 
-| Modelo          | Dataset          | Precisión |  Num. de parámetros |
+| Modelo          | Dataset          | Precisión |  Params. |
 |-----------------|------------------|----------|-------------------| 
-| **ResNet**      | FashionMNIST     | 95.17%   |        272k       | 
-| **EfficientNet**| FashionMNIST     | 94.18%   |        333k       |
+| **ResNet**      | FashionMNIST     | 95.17%   |  272k  | 
+| **EfficientNet**| FashionMNIST     | 94.18%   |  333k  |
 
 ### Entrenamiento de un modelo desde cero
 
