@@ -2,3 +2,6 @@
 __pycache__/
 *.pyc
 *.pyo
+
+# Ignorar dataset
+data/fashion_mnist/

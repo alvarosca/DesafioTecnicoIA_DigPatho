@@ -10,8 +10,8 @@ import torchinfo
 import csv
 import os
 
-from efficientnet import *
-from resnet import *
+from models.efficientnet import *
+from models.resnet import *
 from utils import *
 from parsecmd import *
 
@@ -103,7 +103,7 @@ def test(epoch, best_acc, net, testloader, criterion, save_ckpt=True, save_preds
         return acc, best_acc 
 
 
-def get_submission_csv(preds, output_file='submission.csv'):
+def get_submission_csv(preds, output_file='./submission/submission.csv'):
     with open(output_file, mode='w', newline='') as file:
         writer = csv.writer(file)
         writer.writerow(['id', 'label'])  # Escribe el 'header' del csv
